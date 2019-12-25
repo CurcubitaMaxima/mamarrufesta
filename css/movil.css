@@ -1,0 +1,79 @@
+@media screen and (max-width:992px ) {
+  body{
+    display: block;
+  }
+
+  #navegacion {
+    display: none;
+  }
+  #navResponsive {
+    display: none;
+  }
+
+  #navResponsive{
+    background: url(../img/menu-responsive.png)  black center;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    width: 100%;
+    justify-content: center;
+    z-index: 99999;
+  }
+
+  #navResponsive a {
+    color: white;
+    text-decoration: none;
+  }
+  #navResponsive li{
+    list-style: none;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+  /*barra de menu*/
+    #menu_bar {
+      display:block;
+      width:100%;
+      background:#F09A9D;
+      position: fixed;
+      z-index: 9999;
+    }
+
+    .active{
+      position: absolute;
+      z-index: 999;
+      background: transparent;
+    }
+    /*icono menu*/
+      #menu_bar #boton img{
+          width: 40px;
+          margin: 10px;
+      }
+      .logoaResponsive{
+        height: 150px;
+      }
+      #produktuak .pagina{
+        min-height: 700px;
+      }
+      #produktuak .contenido{
+        flex-direction: column;
+      }
+      #produktuak .contenido #mapid{
+        margin-left: 0;
+        height: 500px;
+      }
+      #produktuak .contenido #drpDownMap{
+
+      }
+
+
+        section{
+          width: 100%;
+          margin-left: 0;
+        }
+        .pagina{
+          margin-top: 80px;
+        }
+
+}

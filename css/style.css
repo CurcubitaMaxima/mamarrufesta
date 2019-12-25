@@ -1,0 +1,169 @@
+@font-face {
+font-family: titulo;
+src: url(../font/ComicRunes.otf) format("opentype");
+}
+@font-face {
+font-family: menu;
+src: url(../font/upheavtt.ttf) format("opentype");
+}
+@font-face {
+font-family: punk;
+src: url(../font/ShonenPunk.ttf) format("opentype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  display: flex;
+}
+/*menu navegacion*/
+#menu_bar{
+  display: none;
+}
+.logoa{
+  height:150px;
+}
+
+#navegacion{
+background: url(../img/fondo-menu00.png)  black bottom;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  position: fixed;
+  width: 15%;
+  justify-content: center;
+
+}
+
+#navegacion a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  text-shadow: 3px 2px black;
+  font-family: punk;
+}
+#navegacion li{
+  list-style: none;
+  padding-bottom: 30px;
+  text-align: center;
+}
+/*fondo sectios*/
+#hasiera{
+  background: rgba(13,13,13,1);
+  color: white;
+}
+#galeria{
+   background: rgb(73, 24, 61);
+}
+#nola-heldu{
+  background: rgba(156,115,2,1);
+}
+#egitaraua{
+  background: rgba(101,1,53,1);
+}
+#produktuak{
+  background: linear-gradient(to right, rgb(97, 0, 50) 0%, rgb(143, 87, 199) 0%, rgb(143, 87, 199) 32%, rgb(143, 87, 199) 100%);
+}
+#merchan{
+  background: rgba(173,95,0,1);
+}
+/*paginas*/
+section{
+  min-height: 100vh;
+  background: red;
+  width: 90%;
+  margin-left: 15%;
+  display: flex;
+  align-items: center;
+}
+
+.pagina{
+  text-align: center;
+  margin:20px;
+  width: 100%;
+}
+
+ h1{
+   margin-bottom: 50px;
+   display: none;
+ }
+ h2{
+   margin-bottom: 30px;
+ }
+
+ .galeria img{
+    width: 33.33%;
+    padding: 5px;
+ }
+.oculto{
+  display:none;
+}
+.contenido{
+  display: flex;
+}
+/*hasierako galderak*/
+.paginaPrincipal{margin:0;}
+.galderak{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.galdera1{
+  background: red;
+  transform: skew(0deg, -1deg) translateY(-40px);
+}
+
+.texto1 h2::before{
+  content: "";
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  top: -15px;
+  left: -64px;
+  transform: rotate(-2deg);
+  border: solid 4px #beff00;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  background: black;
+  z-index: -1;
+}
+
+.galdera2{
+  background: rgb(42, 70, 15);
+    transform: skew(0deg, -1deg) translateY(-40px);
+}
+
+.galdera3{
+  background: orange;
+  transform: skew(0deg, -1deg) translateY(-40px);
+}
+.galdera4{
+  background: brown;
+  transform: skew(0deg, -1deg) translateY(-40px);
+}
+.galderak div{
+  width: 40%;
+}
+.irudia1, .texto1{
+  transform: skew(0deg, 2deg) translateY(0px);
+
+}
+.irudia1 img{
+  position: absolute;
+  left: 200px;
+  top: -100px;
+}
+
+/*mapa produktos*/
+#mapid {
+  height: 700px;
+  width: 100%;
+  margin-left: 20px;
+}
+#drpDownMap{
+  display: none;
+}
