@@ -145,24 +145,18 @@ section{
 
 }
 .galdera1{
-  background: red;
+  background: #5933cc;
   transform: skew(0deg, -1deg) translateY(-40px);
 }
-
-.texto1 h2::before{
-  content: "";
-  width: 100%;
-  height: 20%;
-  position: absolute;
-  top: -15px;
-  left: -64px;
-  transform: rotate(-2deg);
-  border: solid 4px #beff00;
-  transition: all 1s ease-in-out;
-  -webkit-transition: all 1s ease-in-out;
-  background: black;
-  z-index: -1;
+.ezmisto{
+  color:black;
+  display: inline-flex;
+  transform: rotate(3deg);
+  -webkit-transform: rotate(3deg);
+  border: 2px solid deeppink;
 }
+
+
 
 .galdera2{
   background: rgb(42, 70, 15);
@@ -186,8 +180,9 @@ section{
 }
 .irudia1 img{
   position: absolute;
-  left: 200px;
-  top: -100px;
+      left: -1px;
+      top: -160px;
+      height: 300px;
 }
 
 /*mapa produktos*/
