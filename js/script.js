@@ -2,7 +2,7 @@
 
 var menuLink = document.getElementsByClassName("link");
 
-var ocultarSection = function() {
+var ocultarSection = function(event) {
     event.preventDefault();
     var href = this.getAttribute("href");
     var sections = document.getElementsByTagName("section");
