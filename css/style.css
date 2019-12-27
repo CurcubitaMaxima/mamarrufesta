@@ -183,7 +183,16 @@ i
   transition: all 1s ease-in-out;
   -webkit-transition: all 1s ease-in-out;
 }
-
+.texto1 p::after{
+  content: "";
+  width: 105%;
+  height: 80%;
+  position: absolute;
+  transform: rotate(1deg);
+  border: solid 4px #beff00;
+  top: 16%;
+  left: -20px;
+}
 
 .galdera2{
   background: rgb(42, 70, 15);
