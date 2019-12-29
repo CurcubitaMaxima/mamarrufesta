@@ -1,3 +1,11 @@
+/*
+colores:
+  #8EB726 -->verde pistacho
+  #50162D --> granate disroot
+  #1F5C60--> turkesa
+*/
+
+
 @font-face {
 font-family: titulo;
 src: url(../font/ComicRunes.otf) format("opentype");
@@ -29,7 +37,7 @@ body{
   display: none;
 }
 #navegacion{
-background: url(../img/fondo-menu00.png)  black bottom;
+  background: url(../img/fondo05.png) black center;
   display: flex;
   align-items: center;
   height: 100vh;
@@ -63,8 +71,14 @@ height: 175px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-
 }
+.logoa:hover{
+  background: url("../img/logo2.png");
+  height: 170px;
+  width: 140px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 #navegacion li{
   list-style: none;
@@ -149,7 +163,7 @@ i
   display: flex;
 }
 /*hasierako galderak*/
-.paginaPrincipal{margin:0;}
+.paginaPrincipal{margin:0;background:#3f8175;}
 .paginaPrincipal p{
   color:black;
 }
@@ -158,6 +172,11 @@ i
   display: flex;
   justify-content: center;
   align-items: center;
+
+}
+.galderak div{
+  width: 45%;
+  transform: skew(0deg, 2deg) translateY(0px);
 
 }
 .galdera1{
@@ -169,6 +188,14 @@ i
   display: inline-flex;
   transform: rotate(3deg);
   -webkit-transform: rotate(3deg);
+  border: 4px solid #ff00aaff;
+}
+
+.ezmisto2{
+  color:black;
+  display: inline-flex;
+  transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
   border: 4px solid #ff00ffff;
 }
 .texto1 p::before{
@@ -176,7 +203,7 @@ i
   width: 105%;
   height: 80%;
   position: absolute;
-  top: 16%;
+  top: 18%;
   left: -20px;
   transform: rotate(-2deg);
   border: solid 4px #ff00ffff;
@@ -185,42 +212,70 @@ i
 }
 .texto1 p::after{
   content: "";
-  width: 105%;
-  height: 80%;
-  position: absolute;
-  transform: rotate(1deg);
-  border: solid 4px #beff00;
-  top: 16%;
-  left: -20px;
-}
+      width: 105%;
+      height: 80%;
+      position: absolute;
+      transform: rotate(1deg);
+      border: solid 4px #440055ff;
+      top: 20%;
+      left: -20px;
 
+  }
+.texto2{
+  position: absolute;
+  left: 5%;
+}
+.texto4 {
+
+    position: absolute;
+    left: 5%;
+
+}
 .galdera2{
   background: rgb(42, 70, 15);
     transform: skew(0deg, -1deg) translateY(-40px);
 }
+
 
 .galdera3{
   background: orange;
   transform: skew(0deg, -1deg) translateY(-40px);
 }
 .galdera4{
-  background: brown;
+  background: #3f8175;
   transform: skew(0deg, -1deg) translateY(-40px);
 }
-.galderak div{
-  width: 40%;
-}
+
 .irudia1, .texto1{
   transform: skew(0deg, 2deg) translateY(0px);
 
 }
 .irudia1 img{
   position: absolute;
-      left: -20%;
+      left: -5%;
       top: -160px;
       height: 300px;
 }
+.irudia2 img{
+position: absolute;
+    left: 65%;
+    top: -160px;
+    height: 300px;
 
+}
+.irudia3 img{
+  position: absolute;
+      left: -5%;
+      top: -160px;
+      height: 300px;
+}
+.irudia4 img{
+position: absolute;
+    left: 65%;
+    top: -160px;
+    height: 300px;
+
+}
 /*mapa produktos*/
 #mapid {
   height: 700px;
