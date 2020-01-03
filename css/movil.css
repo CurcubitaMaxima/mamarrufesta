@@ -24,6 +24,7 @@
   #navResponsive a {
     color: white;
     text-decoration: none;
+    font-family: punk;
   }
   #navResponsive li{
     list-style: none;

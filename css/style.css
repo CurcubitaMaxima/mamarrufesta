@@ -29,13 +29,18 @@ src: url(../font/Courier\ Prime\ Code.ttf) format("opentype");
 body{
   display: flex;
   font-size: 15px;
-
 }
 
+
+
 /*menu navegacion*/
+
+
+
 #menu_bar{
   display: none;
 }
+
 #navegacion{
   background: url(../img/fondo05.png) black center;
   display: flex;
@@ -46,9 +51,11 @@ body{
   justify-content: center;
 
 }
+
 #navegacion ul{
   width: 100%;
 }
+
 #navegacion li#uno{
   display: flex;
   align-items: center;
@@ -56,14 +63,17 @@ body{
   position: relative;
 height: 175px;
 }
+
 #navegacion li#uno a{
   height: auto;
   width: auto;
   position:absolute;
 }
+
 #navegacion li#uno a:hover{
   background: none;
 }
+
 .logoa{
   background: url("../img/logo1.png");
   height: 120px;
@@ -72,6 +82,7 @@ height: 175px;
   background-repeat: no-repeat;
   background-size: contain;
 }
+
 .logoa:hover{
   background: url("../img/logo2.png");
   height: 170px;
@@ -80,10 +91,12 @@ height: 175px;
   background-repeat: no-repeat;
   background-size: contain;
 }
+
 #navegacion li{
   list-style: none;
   width: 100%;
 }
+
 #navegacion a {
   text-decoration: none;
   font-size: 20px;
@@ -96,34 +109,38 @@ height: 175px;
   justify-content: center;
   align-items: center;
 }
+
 #navegacion a:hover {
 background: #000;
 }
 
 
+
 /*fondo sections*/
-#hasiera{
-  background: rgba(13,13,13,1);
-  color: white;
+
+
+
+
+#hasiera{background: rgba(13,13,13,1);  color: white;
 }
-#galeria{
-   background: rgb(73, 24, 61);
+#berriak{background: rgba(13,13,13,1);  color: white;
 }
-#nola-heldu{
-  background: rgba(156,115,2,1);
+#galeria{ background: rgb(73, 24, 61);
 }
-#egitaraua{
-  background: rgba(101,1,53,1);
+#nola-heldu{background: rgba(156,115,2,1);
 }
-#produktuak{
-  background: linear-gradient(to right, rgb(97, 0, 50) 0%, rgb(143, 87, 199) 0%, rgb(143, 87, 199) 32%, rgb(143, 87, 199) 100%);
+#egitaraua{background: rgba(101,1,53,1);
 }
-#merchan{
-  background: rgba(173,95,0,1);
+#produktuak{ background: linear-gradient(to right, rgb(97, 0, 50) 0%, rgb(143, 87, 199) 0%, rgb(143, 87, 199) 32%, rgb(143, 87, 199) 100%);
+}
+#merchan{background: rgba(173,95,0,1);
 }
 
 
 /*paginas*/
+
+
+/*generico*/
 section{
   min-height: 100vh;
   background: red;
@@ -137,12 +154,13 @@ section{
 section p {
   font-family: texto;
 }
+
 .pagina{
   text-align: center;
   margin:20px;
   width: 100%;
 }
-i
+
  h1{
    margin-bottom: 50px;
    display: none;
@@ -152,52 +170,40 @@ i
   font-family: texto;
  }
 
- .galeria img{
-    width: 33.33%;
-    padding: 5px;
- }
 .oculto{
   display:none;
 }
-.contenido{
-  display: flex;
+
+
+.galeria img{
+   width: 33.33%;
+   padding: 5px;
 }
 
-/*HASIERAKO DIV-AK*/
+
+
+/*HASIERA-orriko DIV-AK*/
+
+
+.manifest {
+    display: inline-block;
+    position: fixed;
+    z-index: 1;
+    top: 80%;
+    left: 45%;
+    background: black;
+    padding: 11px;
+    border: solid #f0f;
+}
+.manifest a{text-decoration: none;}
+.manifestua{
+  color: yellow;
+  font-family: texto;
+  font-size: 20px;
+}
 
 .paginaPrincipal{margin:0;background:#3f8175;}
-.paginaPrincipal p{
-  color:black;
-}
-.galderak{
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-.galderak div{
-  width: 45%;
-  transform: skew(0deg, 2deg) translateY(0px);
-
-}
-
-.ezmisto{
-  color:black;
-  display: inline-flex;
-  transform: rotate(3deg);
-  -webkit-transform: rotate(3deg);
-  border: 4px solid #ff00aaff;
-}
-
-.ezmisto2{
-  color:black;
-  display: inline-flex;
-  transform: rotate(-3deg);
-  -webkit-transform: rotate(-3deg);
-  border: 4px solid #ff00ffff;
-}
-
+.paginaPrincipal p{color:black;}
 .paginaPrincipal p::before{
   content: "";
   width: 105%;
@@ -210,6 +216,7 @@ i
   transition: all 1s ease-in-out;
   -webkit-transition: all 1s ease-in-out;
 }
+
 .paginaPrincipal p::after{
   content: "";
   width: 105%;
@@ -220,34 +227,23 @@ i
   top: 20%;
   left: -20px;
 }
+.galderak{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-.texto2{
-  position: absolute;
-  left: 5%;
-}
-.texto4 {
-    position: absolute;
-    left: 5%;
 }
 
-.galdera1{
-  background: #5933cc;
-  transform: skew(0deg, -1deg) translateY(-40px);
-}
-.galdera2{
-  background: rgb(42, 70, 15);
-    transform: skew(0deg, -1deg) translateY(-40px);
-}
-.galdera3{
-  background: orange;
-  transform: skew(0deg, -1deg) translateY(-40px);
-}
-.galdera4{
-  background: #3f8175;
-  transform: skew(0deg, -1deg) translateY(-40px);
+.galderak div {
+  width: 45%;
+  transform: skew(0deg, 2deg) translateY(0px);
 }
 
-
+.galdera1{background: #5933cc;  transform: skew(0deg, -1deg) translateY(-40px);}
+.galdera2{ background: rgb(42, 70, 15);  transform: skew(0deg, -1deg) translateY(-40px);}
+.galdera3{background: orange;  transform: skew(0deg, -1deg) translateY(-40px);}
+.galdera4{background: #3f8175;  transform: skew(0deg, -1deg) translateY(-40px);}
 .irudia1 img{
   position: absolute;
       left: -5%;
@@ -277,7 +273,71 @@ position: absolute;
 .irudia1, .texto1{
   transform: skew(0deg, 2deg) translateY(0px);
 }
+
+.texto2{
+  position: absolute;
+  left: 5%;
+}
+.texto4 {
+    position: absolute;
+    left: 5%;
+}
+
+.ezmisto{
+  color:black;
+  display: inline-flex;
+  transform: rotate(3deg);
+  -webkit-transform: rotate(3deg);
+  border: 4px solid #ff00aaff;
+}
+
+.ezmisto2{
+  color:black;
+  display: inline-flex;
+  transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  border: 4px solid #ff00ffff;
+}
+
+
+
+
+
+/*merchan*/
+
+
+
+.merchandising{margin:0;}
+.merchandising p{color:black;}
+
+.merchan div {
+  width: 45%;
+  transform: skew(0deg, 2deg) translateY(0px);
+}
+
+.merchan{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+
+}
+
+.kami1 img{
+  position: absolute;
+  left: 15%;
+  top: 20%;
+  height: 40%;
+}
+
+
+
+
+
 /*mapa produktos*/
+
+
+
 #mapid {
   height: 700px;
   width: 100%;
@@ -285,4 +345,7 @@ position: absolute;
 }
 #drpDownMap{
   display: none;
+}
+.contenido{/*mapa*/
+  display: flex;
 }
