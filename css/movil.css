@@ -2,7 +2,7 @@
   body{
     display: block;
   }
-
+/*menu navegacion*/
   #navegacion {
     display: none;
   }
@@ -54,6 +54,7 @@
       .logoaResponsive{
         height: 150px;
       }
+
       #produktuak .pagina{
         min-height: 700px;
       }
@@ -67,14 +68,45 @@
       #produktuak .contenido #drpDownMap{
 
       }
+/*sections*/
 
-
-        section{
-          width: 100%;
-          margin-left: 0;
-        }
-        .pagina{
+   section{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    left:-15%;
+    }a
+    .paginas{
           margin-top: 80px;
         }
+/*hasierako div-ak*/
+/*.galdera1{
+  flex-direction: column;
+}
+
+.irudia1 img {
+
+    position: absolute;
+    left: 20%;
+    top: 130px;
+    height: 150px;
+}
+.irudia1{
+  padding-bottom: 190px;
+}
+.texto1 {
+    margin-left: 15%;
+    width: 75%;
+    padding-top: 130px;
+}
+galderak {
+
+    height: 100vh;
+    display: none;
 
 }
