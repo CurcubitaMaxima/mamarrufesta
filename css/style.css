@@ -138,7 +138,10 @@ background: #000;
 
 
 /*paginas*/
-
+section #hasiera, section #berriak, section #galeria, section #nola-heldu, section #produktuak{
+  display: flex;
+  align-items: center;
+}
 
 /*generico*/
 section{
@@ -146,8 +149,7 @@ section{
   background: red;
   width: 90%;
   margin-left: 15%;
-  display: flex;
-  align-items: center;
+
   font-weight: bold;
 }
 
@@ -302,7 +304,23 @@ position: absolute;
 
 
 /*EGITARAUA*/
-
+.abrir{
+  background-color: green;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 70%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  margin-left: 20%;
+  text-align: center;
+  border-radius: 20px 20px 20px 20px;
+  margin-top: 2%;
+  border: solid black;
+  margin-bottom: 2%;
+}
 
 table {
   border: 1px solid #ccc;
@@ -312,11 +330,11 @@ table {
   width: 70%;
   table-layout: fixed;
   margin-left: 20%;
+  display:none;
 }
 
-table caption {
+table  {
   font-size: 1.5em;
-  margin: .5em 0 .75em;
 }
 
 table tr {
@@ -350,6 +368,9 @@ table th {
 .ordua{
   width: 30%;
 }
+
+
+
 @media screen and (max-width: 600px) {
   table {
     border: 0;

@@ -40,3 +40,18 @@ document.getElementById("drpDownMap").addEventListener('click', mapResponsive, f
 //----------------------------------------------------------------------------------------------
 
 /**egitaraua*/
+
+var abrir = document.getElementsByClassName("abrir");
+var i;
+
+for (i = 0; i < abrir.length; i++) {
+  abrir[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
