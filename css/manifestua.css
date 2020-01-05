@@ -50,6 +50,32 @@ ul li a:hover{
 .titulo h2{
   font-size: 2em;
 }
+.titulo::before{
+  content: "";
+  width: 26%;
+  height: 13%;
+  position: absolute;
+  top: 17%;
+  left: 34%;
+  transform: rotate(-2deg);
+  border: solid 4px #67f3da;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  z-index: -1;
+}
+.titulo::after{
+  content: "";
+  width: 26%;
+  height: 13%;
+  position: absolute;
+  top: 17%;
+  left: 35%;
+  transform: rotate(2deg);
+  border: solid 4px #f16f6f;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  z-index: -1;
+}
 p{
   width: 70%;
   margin: auto;
