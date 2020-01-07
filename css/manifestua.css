@@ -296,3 +296,74 @@ h2:nth-child(3) {
     opacity: 0.25;
   }
 }
+
+
+/********RESPONSIVE************/
+
+@media screen and (max-width:992px ) {
+
+  ul {
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+    height: 50px;
+  }
+  ul li{
+    float: none;
+
+  }
+li{
+  display: grid;
+margin: 0px auto;
+background: black;
+width: 100%;
+  }
+
+
+  #menu_bar a {
+    float: left;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  #menu_bar a .fa {
+    float: right;
+    color:#ff00ffff;
+
+  }
+
+  .menu_bar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .active {
+    background-color: #ff00ffff;
+    color: black;
+  }
+
+/*
+
+
+ul li {
+  display: none;
+}
+ul a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+ul a .boton {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}*/
+
+}
