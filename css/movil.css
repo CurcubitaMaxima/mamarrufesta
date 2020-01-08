@@ -84,6 +84,17 @@
     .paginas{
           margin-top: 80px;
         }
+
+/*BLOG BERRIAK*/
+
+    .blog-titulo h2 {
+      margin-top: 20%;
+      margin-bottom: 0;
+    }
+
+
+
+
 /*hasierako div-ak*/
 /*.galdera1{
   flex-direction: column;

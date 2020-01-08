@@ -39,6 +39,8 @@ ul li:hover{
 ul li a:hover{
     color:black;
 }
+.boton{  display: none;
+}
 /*texto*/
 .titulo {
   text-align: center;
