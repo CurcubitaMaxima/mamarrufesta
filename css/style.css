@@ -5,7 +5,6 @@ colores:
   #1F5C60--> turkesa
 */
 
-
 @font-face {
 font-family: titulo;
 src: url(../font/ComicRunes.otf) format("opentype");
@@ -30,19 +29,14 @@ body{
   display: flex;
   font-size: 15px;
 }
-
-
-
-/*menu navegacion*/
-
-
-
+/**********************************************************************************************************/
+/**************************************** MENU NAVEGACION *************************************************/
+/**********************************************************************************************************/
 #menu_bar{
   display: none;
 }
-
 #navegacion{
-  background: url(../img/fondo05.png) black center;
+  background:rgba(255, 255, 255, 0) url("../img/fondo.png") repeat scroll 0% 0%;
   display: flex;
   align-items: center;
   height: 100vh;
@@ -51,38 +45,64 @@ body{
   justify-content: center;
 
 }
-
 #navegacion ul{
   width: 100%;
 }
-
 #navegacion li#uno{
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-height: 175px;
+  height: 175px;
 }
-
 #navegacion li#uno a{
   height: auto;
   width: auto;
   position:absolute;
 }
-
-#navegacion li#uno a:hover{
+/*#navegacion li#uno a:hover{
   background: none;
+}*/
+.linkLogo{
+  position: relative !important;
+  height: 140px !important;
+  width: 120px !important;
+  background:  yellow;
+  border-radius: 50%;
+  transform: rotate(30deg)
 }
-
-.logoa{
-  background: url("../img/logo1.png");
+.logo{
+  position: absolute;
   height: 120px;
   width: 100px;
+  transform: rotate(-30deg);
+}
+.logoa{
+  background: url("../img/logoFroga00.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  z-index: 1;
 }
-
+.logoFondo1{
+  /*background: url("../img/logoFroga1.png");*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 0;
+  left: 9px;
+  top: 14px;
+}
+.logoFondo2{
+  /*background: url("../img/logoFroga2.png");*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 0;
+  left: 16px;
+  top: 12px;
+}
+/*
 .logoa:hover{
   background: url("../img/logo2.png");
   height: 170px;
@@ -90,13 +110,15 @@ height: 175px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+}*/
+.linkLogo:hover{
+  background:  yellow !important;
+  box-shadow: 0px 0px 15px yellow;
 }
-
 #navegacion li{
   list-style: none;
   width: 100%;
 }
-
 #navegacion a {
   text-decoration: none;
   font-size: 20px;
@@ -109,41 +131,32 @@ height: 175px;
   justify-content: center;
   align-items: center;
 }
-
-#navegacion a:hover {
+#navegacion .link:hover {
 background: #000;
 }
 
+/**********************************************************************************************************/
+/**************************************** FONDO SECTIONS* *************************************************/
+/**********************************************************************************************************/
+/**#hasiera{background: rgba(13,13,13,1);  color: white;}*/
+#berriak{background: rgba(13,13,13,1);  color: white;}
+#galeria{ background: rgb(73, 24, 61);}
+#nola-heldu{background: rgba(156,115,2,1);}
+#egitaraua{background: rgba(101,1,53,1);}
+#produktuak{ background: linear-gradient(to right, rgb(97, 0, 50) 0%, rgb(143, 87, 199) 0%, rgb(143, 87, 199) 32%, rgb(143, 87, 199) 100%);}
+#merchan{background: rgba(173,95,0,1);}
 
-
-/*fondo sections*/
-
-
-
-
-#hasiera{background: rgba(13,13,13,1);  color: white;
-}
-#berriak{background: rgba(13,13,13,1);  color: white;
-}
-#galeria{ background: rgb(73, 24, 61);
-}
-#nola-heldu{background: rgba(156,115,2,1);
-}
-#egitaraua{background: rgba(101,1,53,1);
-}
-#produktuak{ background: linear-gradient(to right, rgb(97, 0, 50) 0%, rgb(143, 87, 199) 0%, rgb(143, 87, 199) 32%, rgb(143, 87, 199) 100%);
-}
-#merchan{background: rgba(173,95,0,1);
-}
-
-
-/*paginas*/
+/**********************************************************************************************************/
+/************************************************ PAGINAS *************************************************/
+/**********************************************************************************************************/
 section #hasiera, section #berriak, section #galeria, section #nola-heldu, section #produktuak{
   display: flex;
   align-items: center;
 }
 
-/*generico*/
+/**********************************************************************************************************/
+/*********************************************** GENERICO *************************************************/
+/**********************************************************************************************************/
 section{
   min-height: 100vh;
   background: red;
@@ -152,41 +165,45 @@ section{
 
   font-weight: bold;
 }
-
 section p {
   font-family: texto;
 }
-
 .pagina{
   text-align: center;
   margin:20px;
   width: 100%;
 }
-
- h1{
+h1{
    margin-bottom: 50px;
    display: none;
- }
- h2{
+}
+h2{
    margin-bottom: 30px;
   font-family: texto;
- }
-
+}
 .oculto{
   display:none;
 }
-
-
 .galeria img{
    width: 33.33%;
    padding: 5px;
 }
 
+/**********************************************************************************************************/
+/************************************************ HASIERA *************************************************/
+/**********************************************************************************************************/
+#hasiera{
+/*
+background: -moz-linear-gradient(top, rgba(255,38,0,1) 0%, rgba(0,255,17,1) 23%, rgba(0,255,230,1) 53%, rgba(157,0,255,1) 82%, rgba(247,21,0,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,38,0,1)), color-stop(23%, rgba(0,255,17,1)), color-stop(53%, rgba(0,255,230,1)), color-stop(82%, rgba(157,0,255,1)), color-stop(100%, rgba(247,21,0,1)));
+background: -webkit-linear-gradient(top, rgba(255,38,0,1) 0%, rgba(0,255,17,1) 23%, rgba(0,255,230,1) 53%, rgba(157,0,255,1) 82%, rgba(247,21,0,1) 100%);
+background: -o-linear-gradient(top, rgba(255,38,0,1) 0%, rgba(0,255,17,1) 23%, rgba(0,255,230,1) 53%, rgba(157,0,255,1) 82%, rgba(247,21,0,1) 100%);
+background: -ms-linear-gradient(top, rgba(255,38,0,1) 0%, rgba(0,255,17,1) 23%, rgba(0,255,230,1) 53%, rgba(157,0,255,1) 82%, rgba(247,21,0,1) 100%);
+*/
 
-
-/*HASIERA-orriko DIV-AK*/
-
-
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff2600', endColorstr='#f71500', GradientType=0 );
+background: linear-gradient(to bottom, #F7E06C 0%, #F8CED2 25%, #ED5B46 50%, #8BD0B4 75%, #D8EEE7 100%);
+}
 .manifest {
     display: inline-block;
     position: fixed;
@@ -197,14 +214,17 @@ section p {
     padding: 11px;
     border: solid #f0f;
 }
-.manifest a{text-decoration: none;}
+.manifest a{
+  text-decoration: none;
+}
 .manifestua{
   color: yellow;
   font-family: texto;
   font-size: 20px;
 }
-
-.paginaPrincipal{margin:0;background:#3f8175;}
+.paginaPrincipal{
+  background: url("../img/fondo3.png") repeat scroll 0% 0%;
+}
 .paginaPrincipal p{color:black;}
 .paginaPrincipal p::before{
   content: "";
@@ -218,7 +238,6 @@ section p {
   transition: all 1s ease-in-out;
   -webkit-transition: all 1s ease-in-out;
 }
-
 .paginaPrincipal p::after{
   content: "";
   width: 105%;
@@ -234,57 +253,56 @@ section p {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-
 .galderak div {
   width: 45%;
-  transform: skew(0deg, 2deg) translateY(0px);
+  position: relative;
+  /*/*transform: skew(0deg, 2deg) translateY(0px);*/*/
 }
-
-.galdera1{background: #5933cc;  transform: skew(0deg, -1deg) translateY(-40px);}
-.galdera2{ background: rgb(42, 70, 15);  transform: skew(0deg, -1deg) translateY(-40px);}
+/*.galdera1{background: #5933cc;  transform: skew(0deg, -1deg) translateY(-40px);}
+.galdera2{background: rgb(42, 70, 15);  transform: skew(0deg, -1deg) translateY(-40px);}
 .galdera3{background: orange;  transform: skew(0deg, -1deg) translateY(-40px);}
 .galdera4{background: #3f8175;  transform: skew(0deg, -1deg) translateY(-40px);}
+.galdera1{background: #5933cc;}
+.galdera2{background: rgb(42, 70, 15);}
+.galdera3{background: orange;}
+.galdera4{background: #3f8175;}*/
 .irudia1 img{
-  position: absolute;
-      left: -5%;
-      top: -160px;
-      height: 300px;
+  /*position: absolute;*/
+  left: -5%;
+  top: -160px;
+  height: 300px;
 }
 .irudia2 img{
-position: absolute;
-    left: 65%;
-    top: -160px;
-    height: 300px;
+  /*position: absolute;*/
+  left: 65%;
+  top: -160px;
+  height: 300px;
 
 }
 .irudia3 img{
-  position: absolute;
+  /*position: absolute;*/
       left: -5%;
       top: -160px;
       height: 300px;
 }
 .irudia4 img{
-position: absolute;
+/*position: absolute;*/
     left: 65%;
     top: -160px;
     height: 300px;
-
 }
 .irudia1, .texto1{
-  transform: skew(0deg, 2deg) translateY(0px);
+  /*transform: skew(0deg, 2deg) translateY(0px);*/
 }
-
 .texto2{
-  position: absolute;
+ /*position: absolute;*/
   left: 5%;
 }
 .texto4 {
-    position: absolute;
+    /*position: absolute;*/
     left: 5%;
 }
-
 .ezmisto{
   color:black;
   display: inline-flex;
@@ -301,11 +319,14 @@ position: absolute;
   border: 4px solid #ff00ffff;
 }
 
-/*BERRIAK*/
 
-.contenido-blog{color:black;
-width: 75%;}
-
+/**********************************************************************************************************/
+/************************************************ BERRIAK *************************************************/
+/**********************************************************************************************************/
+.contenido-blog{
+  color:black;
+  width: 75%;
+}
 .blog-titulo {
   padding: 30px;
   font-size: 40px;
@@ -316,15 +337,12 @@ width: 75%;}
   border: 2px solid #ff00ffff;
   height: 3%;
 }
-
-
 .img img{
   background:center;
   width: 94%;
   padding: 20px;
   margin-left: 1%;
 }
-
 /* Add a card effect for articles */
 .card {
    background-color: white;
@@ -345,8 +363,9 @@ width: 75%;}
 
 }
 
-
-/*EGITARAUA*/
+/**********************************************************************************************************/
+/********************************************** EGITARAUA *************************************************/
+/**********************************************************************************************************/
 .abrir{
   background-color: green;
   color: black;
@@ -505,8 +524,6 @@ table th {
 
 
 /*mapa produktos*/
-
-
 
 #mapid {
   height: 700px;
