@@ -73,34 +73,47 @@ a{text-decoration: none;}
   height: 120px;
   width: 100px;
   transform: rotate(-30deg);
-}
-#navegacion .logoa{
-  background: url("../img/logoFroga00.png");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
+}
+#navegacion .logoa{
+  background: url("../img/logoFroga00.png") no-repeat center; 
   background-size: contain;
   z-index: 1;
 }
 #navegacion .logoFondo1{
-  background-position: center;
-  background-repeat: no-repeat;
+  display: none;
+  background: url("../img/logoFroga1.png") no-repeat center; 
   background-size: contain;
   z-index: 0;
-  left: 9px;
-  top: 14px;
+  left: 10px;
+  top: 12px;
 }
 #navegacion .logoFondo2{
-  background-position: center;
-  background-repeat: no-repeat;
+  display: none;
+  background: url("../img/logoFroga2.png")no-repeat center; 
   background-size: contain;
   z-index: 0;
-  left: 16px;
-  top: 12px;
+  left: 12px;
+  top: 10px;
 }
 #navegacion .linkLogo:hover{
   background:  yellow !important;
   box-shadow: 0px 0px 15px yellow;
 }
+#navegacion .linkLogo:hover .logoFondo1, #navegacion .linkLogo:hover .logoFondo2{
+  display: block;
+  animation-name: glitch1;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+}
+#navegacion .linkLogo:hover .logoFondo1{animation-name: glitch1;}
+@keyframes glitch1{ from{left: 10px;} to {left: 8px;} }
+
+#navegacion .linkLogo:hover .logoFondo2{animation-name: glitch2;}
+@keyframes glitch2{ from{left: 12px;} to {left: 10px;} }
+
 #navegacion li{
   list-style: none;
   width: 100%;
@@ -185,7 +198,6 @@ h2{
 /************************************************ HASIERA *************************************************/
 /**********************************************************************************************************/
 #hasiera .mierda{
-  display: block !important;
   width: 45%;
   height: 100px;
   background-image: url("../img/logoHandia.png");
@@ -206,14 +218,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff2600', end
 background: linear-gradient(to bottom, #F7E06C 0%, #F8CED2 25%, #ED5B46 50%, #8BD0B4 75%, #D8EEE7 100%);
 }
 #hasiera .paginaPrincipal{
-  background: url("../img/fondo3.png") repeat scroll 0% 0%;
+  background: url("../img/fondo31.png") repeat scroll 0% 0%;
   padding: 20px;
 }
 #hasiera .paginaPrincipal p{
   color:black;
 }
 #hasiera .paginaPrincipal p::before{
-  content: "";
+  /*content: "";*/
   width: 100%;
   height: 80%;
   position: absolute;
@@ -225,7 +237,7 @@ background: linear-gradient(to bottom, #F7E06C 0%, #F8CED2 25%, #ED5B46 50%, #8B
   -webkit-transition: all 1s ease-in-out;
 }
 #hasiera .paginaPrincipal p::after{
-  content: "";
+  /*content: "";*/
   width: 100%;
   height: 80%;
   position: absolute;
@@ -319,7 +331,7 @@ background: linear-gradient(to bottom, #F7E06C 0%, #F8CED2 25%, #ED5B46 50%, #8B
 
 /* Clear floats after the columns */
 .row:after {
-  content: "";
+  /*content: "";*/
   display: table;
   clear: both;
 }
