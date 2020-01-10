@@ -25,7 +25,7 @@
           <li id="siete"  class="icon"><a class="link" href="galeria">BERRIAK</a></li>
           <!--<li id="dos"    class="icon"><a class="link" href="galeria">GALERIA</a></li>
           <li id="tres"   class="icon"><a class="link" href="nola-heldu">NOLA HELDU</a></li>-->
-          <li id="cuatro" class="icon"><a class="link" href="egitaraua">EGITARAUA</a></li>
+          <li id="cuatro" class="icon"><a class="link" href="egitaraua">AURKEZPEN JAIALDIA</a></li>
           <!--<li id="cinco"  class="icon"><a class="link" href="produktuak">PRODUKTUEN JATORRIA</a></li>-->
           <li id="seis"   class="icon"><a class="link" href="merchan">MATERIAL</a></li>
         </ul>
@@ -46,7 +46,7 @@
       <li id="siete" class="icon"><a  class="link" href="berriak">BERRIAK</a></li>
       <!--<li id="dos" class="icon"><a  class="link" href="galeria">GALERIA</a></li>
       <li id="tres" class="icon"><a class="link" href="nola-heldu">NOLA HELDU</a></li>-->
-      <li id="cuatro" class="icon"><a class="link" href="egitaraua">EGITARAUA</a></li>
+      <li id="cuatro" class="icon"><a class="link" href="egitaraua">AURKEZPEN JAIALDIA</a></li>
       <!--<li id="cinco" class="icon"><a class="link" href="produktuak">PRODUKTUEN </br> JATORRIA</a></li>-->
       <li id="seis" class="icon"><a class="link" href="merchan">MATERIAL</a></li>
     </ul>
@@ -257,6 +257,7 @@
   <script src="css/leaflet/leaflet.js"></script>
 
   <script>
+/*
   var mymap = L.map('mapid').setView([42.8729,-1.7798], 9);
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -268,10 +269,13 @@
       'Imagery Â© <a href="https://www.mapbox.com/">Mapbox</a>',
       id: 'mapbox.streets'
   }).addTo(mymap);
+*/
+
 /* por cada marker hacer esto*/
 /*Crear contenido de la descripcion del producto en una var*/
-  var garagardoaContent = "<h3>Cerveza de Maravillas</h3> <p>Maravillasetik egindako garagardo artisauak: infenfaskjnsandf sdfhak sadfj askj</p>";
+  //var garagardoaContent = "<h3>Cerveza de Maravillas</h3> <p>Maravillasetik egindako garagardo artisauak: infenfaskjnsandf sdfhak sadfj askj</p>";
 //krear el marker y el evento (cuando hace clik aparece la descripcion)
+/*
   var garagardoa= L.marker([42.8181, -1.6443]).addTo(mymap).on('click', function() {
     if(screen.width<=992){
       document.getElementById("mapid").style.height = "0px";
@@ -279,6 +283,8 @@
     }
     document.getElementById("descripcion").innerHTML=garagardoaContent;
   });
+
+  */
   </script>
 
 </body>

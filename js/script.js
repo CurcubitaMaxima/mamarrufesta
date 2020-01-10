@@ -31,11 +31,13 @@ document.getElementById("boton").addEventListener('click', menuResponsive, false
 
 //---------------------------------------------------------------------------------------
  /*mapa resposive*/
+/* 
 var mapResponsive = function(){
     document.getElementById("drpDownMap").style.display = "none";
     document.getElementById("mapid").style.height = "500px";
 }
 document.getElementById("drpDownMap").addEventListener('click', mapResponsive, false);
+*/
 
 //----------------------------------------------------------------------------------------------
 

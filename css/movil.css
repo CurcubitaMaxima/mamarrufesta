@@ -18,6 +18,11 @@
     justify-content: space-between;
     height: 55px;
   }
+  #menu_bar a, #menu_bar p{
+    color: white;
+    text-decoration: none;
+    font-family: punk;
+  } 
   #menu_bar #boton{
     width: 60px;
     display: block;
@@ -38,25 +43,37 @@
   }
   #menu_bar #navResponsive{
     display: none;
-    background: url(../img/menu-responsive.png)  black center;
+    /*background: url(../img/fondo.png)  black center;*/
+    background: black;
     align-items: center;
     height: 100vh;
     position: fixed;
-    top:0;
-    width: 100%;
+    top:55px;
+    width: 45%;
     justify-content: center;
     z-index: 99999;
   }
-  #menu_bar #navResponsive a {
-    color: white;
-    text-decoration: none;
-    font-family: punk;
+  @media screen and (max-width:768px ){
+    #menu_bar #navResponsive{ width: 100%;}
+  }
+  #menu_bar #navResponsive ul{
+    width: 100%;
   }
   #menu_bar #navResponsive li{
     list-style: none;
-    padding-bottom: 30px;
+    margin: 10px 0px;
     text-align: center;
-  } 
+  }
+  #menu_bar #navResponsive li a{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu_bar #navResponsive li#uno a{
+    height: auto;
+  }
   #menu_bar #navResponsive .logoaResponsive{
     height: 150px;
   }
