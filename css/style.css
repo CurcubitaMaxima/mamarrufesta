@@ -29,6 +29,7 @@ body{
   display: flex;
   font-size: 15px;
 }
+a{text-decoration: none;}
 /**********************************************************************************************************/
 /**************************************** MENU NAVEGACION *************************************************/
 /**********************************************************************************************************/
@@ -43,7 +44,6 @@ body{
   position: fixed;
   width: 15%;
   justify-content: center;
-
 }
 #navegacion ul{
   width: 100%;
@@ -60,10 +60,7 @@ body{
   width: auto;
   position:absolute;
 }
-/*#navegacion li#uno a:hover{
-  background: none;
-}*/
-.linkLogo{
+#navegacion .linkLogo{
   position: relative !important;
   height: 140px !important;
   width: 120px !important;
@@ -71,21 +68,20 @@ body{
   border-radius: 50%;
   transform: rotate(30deg)
 }
-.logo{
+#navegacion .logo{
   position: absolute;
   height: 120px;
   width: 100px;
   transform: rotate(-30deg);
 }
-.logoa{
+#navegacion .logoa{
   background: url("../img/logoFroga00.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 1;
 }
-.logoFondo1{
-  /*background: url("../img/logoFroga1.png");*/
+#navegacion .logoFondo1{
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -93,8 +89,7 @@ body{
   left: 9px;
   top: 14px;
 }
-.logoFondo2{
-  /*background: url("../img/logoFroga2.png");*/
+#navegacion .logoFondo2{
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -102,16 +97,7 @@ body{
   left: 16px;
   top: 12px;
 }
-/*
-.logoa:hover{
-  background: url("../img/logo2.png");
-  height: 170px;
-  width: 140px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}*/
-.linkLogo:hover{
+#navegacion .linkLogo:hover{
   background:  yellow !important;
   box-shadow: 0px 0px 15px yellow;
 }
@@ -132,7 +118,7 @@ body{
   align-items: center;
 }
 #navegacion .link:hover {
-background: #000;
+  background: #000;
 }
 
 /**********************************************************************************************************/
@@ -153,7 +139,6 @@ section #hasiera, section #berriak, section #galeria, section #nola-heldu, secti
   display: flex;
   align-items: center;
 }
-
 /**********************************************************************************************************/
 /*********************************************** GENERICO *************************************************/
 /**********************************************************************************************************/
@@ -162,11 +147,18 @@ section{
   background: red;
   width: 90%;
   margin-left: 15%;
-
   font-weight: bold;
 }
 section p {
   font-family: texto;
+  line-height: 1.6;
+}
+section p span{
+  padding: 0.45rem;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  background:black;
+  color:white;
 }
 .pagina{
   text-align: center;
@@ -192,6 +184,16 @@ h2{
 /**********************************************************************************************************/
 /************************************************ HASIERA *************************************************/
 /**********************************************************************************************************/
+#hasiera .mierda{
+  display: block !important;
+  width: 45%;
+  height: 100px;
+  background-image: url("../img/logoHandia.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 25.5%;
+}
 #hasiera{
 /*
 background: -moz-linear-gradient(top, rgba(255,38,0,1) 0%, rgba(0,255,17,1) 23%, rgba(0,255,230,1) 53%, rgba(157,0,255,1) 82%, rgba(247,21,0,1) 100%);
@@ -200,35 +202,19 @@ background: -webkit-linear-gradient(top, rgba(255,38,0,1) 0%, rgba(0,255,17,1) 2
 background: -o-linear-gradient(top, rgba(255,38,0,1) 0%, rgba(0,255,17,1) 23%, rgba(0,255,230,1) 53%, rgba(157,0,255,1) 82%, rgba(247,21,0,1) 100%);
 background: -ms-linear-gradient(top, rgba(255,38,0,1) 0%, rgba(0,255,17,1) 23%, rgba(0,255,230,1) 53%, rgba(157,0,255,1) 82%, rgba(247,21,0,1) 100%);
 */
-
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff2600', endColorstr='#f71500', GradientType=0 );
 background: linear-gradient(to bottom, #F7E06C 0%, #F8CED2 25%, #ED5B46 50%, #8BD0B4 75%, #D8EEE7 100%);
 }
-.manifest {
-    display: inline-block;
-    position: fixed;
-    z-index: 1;
-    top: 80%;
-    left: 45%;
-    background: black;
-    padding: 11px;
-    border: solid #f0f;
-}
-.manifest a{
-  text-decoration: none;
-}
-.manifestua{
-  color: yellow;
-  font-family: texto;
-  font-size: 20px;
-}
-.paginaPrincipal{
+#hasiera .paginaPrincipal{
   background: url("../img/fondo3.png") repeat scroll 0% 0%;
+  padding: 20px;
 }
-.paginaPrincipal p{color:black;}
-.paginaPrincipal p::before{
+#hasiera .paginaPrincipal p{
+  color:black;
+}
+#hasiera .paginaPrincipal p::before{
   content: "";
-  width: 105%;
+  width: 100%;
   height: 80%;
   position: absolute;
   top: 18%;
@@ -238,9 +224,9 @@ background: linear-gradient(to bottom, #F7E06C 0%, #F8CED2 25%, #ED5B46 50%, #8B
   transition: all 1s ease-in-out;
   -webkit-transition: all 1s ease-in-out;
 }
-.paginaPrincipal p::after{
+#hasiera .paginaPrincipal p::after{
   content: "";
-  width: 105%;
+  width: 100%;
   height: 80%;
   position: absolute;
   transform: rotate(1deg);
@@ -248,78 +234,57 @@ background: linear-gradient(to bottom, #F7E06C 0%, #F8CED2 25%, #ED5B46 50%, #8B
   top: 20%;
   left: -20px;
 }
-.galderak{
-  height: 100vh;
+#hasiera .paginaPrincipal .galderak{
+  min-height: 500px;
+  /*height: 100vh;*/
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.galderak div {
-  width: 45%;
+#hasiera .paginaPrincipal .galderak div {
+  width: 50%;
   position: relative;
-  /*/*transform: skew(0deg, 2deg) translateY(0px);*/*/
 }
-/*.galdera1{background: #5933cc;  transform: skew(0deg, -1deg) translateY(-40px);}
-.galdera2{background: rgb(42, 70, 15);  transform: skew(0deg, -1deg) translateY(-40px);}
-.galdera3{background: orange;  transform: skew(0deg, -1deg) translateY(-40px);}
-.galdera4{background: #3f8175;  transform: skew(0deg, -1deg) translateY(-40px);}
-.galdera1{background: #5933cc;}
-.galdera2{background: rgb(42, 70, 15);}
-.galdera3{background: orange;}
-.galdera4{background: #3f8175;}*/
-.irudia1 img{
-  /*position: absolute;*/
-  left: -5%;
-  top: -160px;
-  height: 300px;
-}
-.irudia2 img{
-  /*position: absolute;*/
-  left: 65%;
-  top: -160px;
-  height: 300px;
+#hasiera .paginaPrincipal .galderak .irudia1 img{left: -5%;top: -160px;height: 300px;}
+#hasiera .paginaPrincipal .galderak .irudia2 img{left: 65%;top: -160px;height: 300px;}
+#hasiera .paginaPrincipal .galderak .irudia3 img{left: -5%;top: -160px;height: 300px;}
+#hasiera .paginaPrincipal .galderak .irudia4 img{left: 65%;top: -160px;height: 300px;}
 
-}
-.irudia3 img{
-  /*position: absolute;*/
-      left: -5%;
-      top: -160px;
-      height: 300px;
-}
-.irudia4 img{
-/*position: absolute;*/
-    left: 65%;
-    top: -160px;
-    height: 300px;
-}
-.irudia1, .texto1{
-  /*transform: skew(0deg, 2deg) translateY(0px);*/
-}
-.texto2{
- /*position: absolute;*/
-  left: 5%;
-}
-.texto4 {
-    /*position: absolute;*/
-    left: 5%;
-}
-.ezmisto{
+/*#hasiera .paginaPrincipal .galderak .texto2{left: 5%;}
+#hasiera .paginaPrincipal .galderak .texto4 {left: 5%;}*/
+
+#hasiera .paginaPrincipal .galderak h2 .ezmisto{
   color:black;
   display: inline-flex;
   transform: rotate(3deg);
   -webkit-transform: rotate(3deg);
   border: 4px solid #ff00aaff;
 }
-
-.ezmisto2{
+#hasiera .paginaPrincipal .galderak h2 .ezmisto2{
   color:black;
   display: inline-flex;
   transform: rotate(-3deg);
   -webkit-transform: rotate(-3deg);
   border: 4px solid #ff00ffff;
 }
-
-
+/**********************************************************************************************************/
+/************************************************ MANIFESTUA ***********************************************/
+/**********************************************************************************************************/
+#hasiera .manifest {
+  display: inline-block;
+  position: fixed;
+  z-index: 1;
+  top: 80%;
+  left: 45%;
+  background: black;
+  padding: 11px;
+  border: solid #f0f;
+}
+#hasiera .manifest a .manifestua{
+  color: yellow;
+  font-family: texto;
+  font-size: 20px;
+}
 /**********************************************************************************************************/
 /************************************************ BERRIAK *************************************************/
 /**********************************************************************************************************/
