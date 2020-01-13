@@ -300,34 +300,45 @@ background: linear-gradient(to bottom, #F7E06C 0%, #F8CED2 25%, #ED5B46 50%, #8B
 /**********************************************************************************************************/
 /************************************************ BERRIAK *************************************************/
 /**********************************************************************************************************/
-.contenido-blog{
-  color:black;
-  width: 75%;
+#berriak #berriakContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.blog-titulo {
-  padding: 30px;
+#berriak #berriakContainer .blog-titulo{
+  padding: 20px;
   font-size: 40px;
   text-align: center;
-  background: black;
-  width: 25%;
-  margin: 5% 35%;
-  border: 2px solid #ff00ffff;
-  height: 3%;
+  background:black;
+  margin-top: 50px;
+  border: 2px solid#ff00ffff;
 }
-.img img{
-  background:center;
-  width: 94%;
+#berriak #berriakContainer .blog-titulo h2{
+  margin-bottom: 0px;
+}
+#berriak #berriakContainer .contenido-blog{
+  color:black;
+  width: 80%;
+  margin-top: 20px;
+}
+#berriak #berriakContainer .contenido-blog .card {
+  background-color: white;
   padding: 20px;
-  margin-left: 1%;
+  margin-bottom: 20px;
+}
+#berriak #berriakContainer .contenido-blog .card .img{
+  margin: 15px 0px;
+}
+#berriak #berriakContainer .contenido-blog .card .img img{
+  width: 100%;
 }
 /* Add a card effect for articles */
-.card {
-   background-color: white;
-   padding: 20px;
-   margin-top: 20px;
-   margin-left: 15%;
-   width: 100%;
-}
+
+
+/**********************************************************************************************************/
+/********************************************** EGITARAUA *************************************************/
+/**********************************************************************************************************/
 
 /* Clear floats after the columns */
 .row:after {
@@ -340,9 +351,6 @@ background: linear-gradient(to bottom, #F7E06C 0%, #F8CED2 25%, #ED5B46 50%, #8B
 
 }
 
-/**********************************************************************************************************/
-/********************************************** EGITARAUA *************************************************/
-/**********************************************************************************************************/
 .abrir{
   background-color: green;
   color: black;

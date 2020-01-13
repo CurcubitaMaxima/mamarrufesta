@@ -133,13 +133,19 @@
           margin-top: 80px;
         }
 
-/*BLOG BERRIAK*/
-
-    .blog-titulo h2 {
-      margin-top: 20%;
-      margin-bottom: 0;
-    }
-
+/************************ BERRIAK ********************************/
+#berriak #berriakContainer .blog-titulo{
+  margin-top: 60px;
+  padding: 10px;
+}
+#berriak #berriakContainer .blog-titulo h2{
+  font-size: 24px;
+}
+@media screen and (max-width:768px ){
+  #berriak #berriakContainer .contenido-blog{
+    width: 90%;
+  }
+}
 
 
 
