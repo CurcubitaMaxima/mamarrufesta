@@ -78,13 +78,13 @@ a{text-decoration: none;}
   background-size: contain;
 }
 #navegacion .logoa{
-  background: url("../img/logoFroga00.png") no-repeat center; 
+  background: url("../img/logoFroga00.png") no-repeat center;
   background-size: contain;
   z-index: 1;
 }
 #navegacion .logoFondo1{
   display: none;
-  background: url("../img/logoFroga1.png") no-repeat center; 
+  background: url("../img/logoFroga1.png") no-repeat center;
   background-size: contain;
   z-index: 0;
   left: 10px;
@@ -92,7 +92,7 @@ a{text-decoration: none;}
 }
 #navegacion .logoFondo2{
   display: none;
-  background: url("../img/logoFroga2.png")no-repeat center; 
+  background: url("../img/logoFroga2.png")no-repeat center;
   background-size: contain;
   z-index: 0;
   left: 12px;
@@ -286,8 +286,8 @@ background: linear-gradient(to bottom, #F7E06C 0%, #F8CED2 25%, #ED5B46 50%, #8B
   display: inline-block;
   position: fixed;
   z-index: 1;
-  top: 80%;
-  left: 45%;
+  top: 85%;
+  left: 60%;
   background: black;
   padding: 11px;
   border: solid #f0f;
@@ -484,11 +484,20 @@ table th {
 }
 
 .merchand{
-  height: 100vh;
+  height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: baseline;
+  /*justify-content: center;
+  align-items: baseline;*/
+  flex-wrap: wrap;;
 
+}
+.kami{background: blue;}
+.txapa{background: red;}
+.partxe{background: crimson;}
+.fanzine{background: grey;}
+.merchand div{
+  width: 50%;
+  height: 50%;
 }
 
 .kami1 img{
