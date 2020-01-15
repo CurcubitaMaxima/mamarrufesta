@@ -468,44 +468,7 @@ table th {
   }
 }
 
-<<<<<<< HEAD
-/*merchan*/
 
-
-
-.merchandising{margin:0;}
-.merchandising p{
-  color: black;
-  position: absolute;
-  width: 20%;
-  left: 40%;
-  top: 20%;
-}
-
-.merchand{
-  height: 100%;
-  display: flex;
-  /*justify-content: center;
-  align-items: baseline;*/
-  flex-wrap: wrap;;
-
-}
-.kami{background: blue;}
-.txapa{background: red;}
-.partxe{background: crimson;}
-.fanzine{background: grey;}
-.merchand div{
-  width: 50%;
-  height: 50%;
-}
-
-.kami1 img{
-  position: absolute;
-  top: 10%;
-  height: 40%;
-  width: 20%;
-  left: 15%;
-=======
 /**********************************************************************************************************/
 /********************************************** EGITARAUA *************************************************/
 /**********************************************************************************************************/
