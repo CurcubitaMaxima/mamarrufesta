@@ -138,7 +138,6 @@ a{text-decoration: none;}
 /**********************************************************************************************************/
 /**************************************** FONDO SECTIONS* *************************************************/
 /**********************************************************************************************************/
-/**#hasiera{background: rgba(13,13,13,1);  color: white;}*/
 #berriak{background: rgba(13,13,13,1);  color: white;}
 #galeria{ background: rgb(73, 24, 61);}
 #nola-heldu{background: rgba(156,115,2,1);}
@@ -158,7 +157,6 @@ section #hasiera, section #berriak, section #galeria, section #nola-heldu, secti
 /**********************************************************************************************************/
 section{
   min-height: 100vh;
-  background: red;
   width: 90%;
   margin-left: 15%;
   font-weight: bold;
@@ -470,46 +468,41 @@ table th {
   }
 }
 
-/*merchan*/
-
-
-
-.merchandising{margin:0;}
-.merchandising p{
-  color: black;
-  position: absolute;
-  width: 20%;
-  left: 40%;
-  top: 20%;
-}
-
-.merchand{
-  height: 100vh;
+/**********************************************************************************************************/
+/********************************************** EGITARAUA *************************************************/
+/**********************************************************************************************************/
+#merchan .merchandising{
   display: flex;
   justify-content: center;
-  align-items: baseline;
-
+  align-items: center;
+  flex-direction: column;
 }
-
-.kami1 img{
-  position: absolute;
-  top: 10%;
-  height: 40%;
-  width: 20%;
-  left: 15%;
+#merchan .merchandising h2{
+  padding: 20px;
+  font-size: 40px;
+  text-align: center;
+  background:black;
+  margin-top: 50px;
+  border: 2px solid #ff00ffff;
 }
-.titulo{
-  margin:0 auto;
+#merchan .merchandising .merchand{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
 }
-.deskribapena1 h2 {
-    position: absolute;
-    left: 30%;
-    top: 5%;
+#merchan .merchandising .merchand .kami1{
+  width: 200px;
+  height: 250px;
 }
-
-
-/*mapa produktos*/
-
+#merchan .merchandising .merchand .kami1 img{
+  width: 100%;
+}
+/**********************************************************************************************************/
+/***************************************** MAPA PRODUCTOS *************************************************/
+/**********************************************************************************************************/
 #mapid {
   height: 700px;
   width: 100%;
