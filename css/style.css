@@ -485,6 +485,10 @@ table th {
   background:black;
   margin-top: 50px;
   border: 2px solid #ff00ffff;
+  color: white;
+}
+#merchan .merchandising p{
+  margin:2%;
 }
 #merchan .merchandising .merchand{
   display: flex;
