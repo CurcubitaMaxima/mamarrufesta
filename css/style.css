@@ -144,7 +144,7 @@ a{text-decoration: none;}
 #egitaraua{background: rgba(101,1,53,1);}
 #produktuak{ background: linear-gradient(to right, rgb(97, 0, 50) 0%, rgb(143, 87, 199) 0%, rgb(143, 87, 199) 32%, rgb(143, 87, 199) 100%);}
 #merchan{background: rgba(173,95,0,1);}
-#kontaktua{background: url(../img/fondo6.png)}
+#kontaktua{background: url(../img/fondo61.png)}
 
 /**********************************************************************************************************/
 /************************************************ PAGINAS *************************************************/
@@ -500,7 +500,6 @@ table th {
   flex-direction: row;
   flex-wrap: wrap;
   width: 90%;
->>>>>>> ea9d2e176f9e7eb4affe005247f3bf76b0e42cfc
 }
 #merchan .merchandising .merchand .kami1{
   width: 200px;
@@ -539,7 +538,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff2600', end
 background:linear-gradient(to bottom, #F7E06C 0%, #8BD0B4 75%, #D8EEE7 100%);
 }
 #kontaktua .kontaktuaFlex{
-  background: url("../img/fondo6.png") repeat scroll 0% 0%;
+  background: url("../img/fondo61.png") repeat scroll 0% 0%;
   padding: 5%;
 }
 #kontaktua .kontaktuaFlex{
