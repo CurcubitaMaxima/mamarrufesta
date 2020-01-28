@@ -340,6 +340,28 @@ background: linear-gradient(to bottom, #F7E06C 0%, #F8CED2 25%, #ED5B46 50%, #8B
 /********************************************** EGITARAUA *************************************************/
 /**********************************************************************************************************/
 
+#egitaraua .contenidoEgitaraua{
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.otsaiak1{
+  height: 95%;
+}
+
+.aurkezpena {
+  font-size:2.0em;
+}
+.h2Egitaraua{
+  background: black;
+  color: white;
+  border: solid 2px #ff00ffff;
+}
+
+
+
+
 /* Clear floats after the columns */
 .row:after {
   /*content: "";*/

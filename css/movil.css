@@ -22,7 +22,7 @@
     color: white;
     text-decoration: none;
     font-family: punk;
-  } 
+  }
   #menu_bar #boton{
     width: 60px;
     display: block;
@@ -147,8 +147,18 @@
   }
 }
 
+/***********************KONTAKTUA******************************************/
 
+@media screen and (max-width:768px ){
+#kontaktua .testoKontakto {
 
+    padding: 2em;
+    text-align: center;
+    position: absolute;
+    margin-top: 20%;
+
+}
+}
 /*hasierako div-ak*/
 /*.galdera1{
   flex-direction: column;
