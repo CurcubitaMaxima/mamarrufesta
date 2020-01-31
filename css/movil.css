@@ -54,9 +54,8 @@
     z-index: 99999;
   }
 
-  /////////////////**/
   @media screen and (max-width:768px ){
-    #menu_bar #navResponsive{ width: 100%;}
+    #menu_bar #navResponsive{ width: 100% !important; }
   }
   #menu_bar #navResponsive ul{
     width: 100%;

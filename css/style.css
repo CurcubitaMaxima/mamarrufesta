@@ -506,6 +506,8 @@ table th {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 95%;
+  margin-left: 2.5%;
 }
 #merchan .merchandising h2{
   padding: 20px;
