@@ -53,6 +53,8 @@
     justify-content: center;
     z-index: 99999;
   }
+
+  /////////////////**/
   @media screen and (max-width:768px ){
     #menu_bar #navResponsive{ width: 100%;}
   }
@@ -165,7 +167,28 @@ justify-content: center;
     width: 90%;
   }
 }
+/***************************EGITARAUA**************************************/
+@media screen and (max-width:768px ){
+  #egitaraua .contenidoEgitaraua {
+    flex-flow: column;
+    margin-top: 20%;
+}
+.otsaiak1{height: 60%;}
+.textoEgitaraua {
+    display: flex;
+    flex-flow: column;
+    margin-left: 10%;
+}
+#egitaraua .contenidoEgitaraua {
+    display: flex;
+    align-items: center;
+}
+.h2Egitaraua {
 
+    text-align: center;
+    width: 80%;
+
+}
 /***********************KONTAKTUA******************************************/
 
 @media screen and (max-width:768px ){
