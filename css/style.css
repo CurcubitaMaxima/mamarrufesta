@@ -329,9 +329,13 @@ background: linear-gradient(to bottom, #F7E06C 0%, #F8CED2 25%, #ED5B46 50%, #8B
 }
 #berriak #berriakContainer .contenido-blog .card .img{
   margin: 15px 0px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
+
 #berriak #berriakContainer .contenido-blog .card .img img{
-  width: 100%;
+  width: 50%;
 }
 /* Add a card effect for articles */
 
@@ -522,15 +526,13 @@ table th {
   flex-direction: row;
   flex-wrap: wrap;
   width: 90%;
->>>>>>> ea9d2e176f9e7eb4affe005247f3bf76b0e42cfc
+
 }
-#merchan .merchandising .merchand .kami1{
-  width: 200px;
-  height: 250px;
-}
-#merchan .merchandising .merchand .kami1 img{
-  width: 100%;
-}
+#merchan .objetos-merchan{width: 30%;}
+#merchan .merchandising .merchand .parche0 img{ width: 50%;}
+#merchan .merchandising .merchand .parche1 img{ width: 50%;}
+#merchan .merchandising .merchand .parche2 img{ width: 50%;}
+#merchan .merchandising .merchand .txapa img{ width: 50%; transform: rotate(-90deg);}
 /**********************************************************************************************************/
 /***************************************** MAPA PRODUCTOS *************************************************/
 /**********************************************************************************************************/
