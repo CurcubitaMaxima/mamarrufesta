@@ -150,6 +150,11 @@
 /***********************KONTAKTUA******************************************/
 
 @media screen and (max-width:768px ){
+  #kontaktua .testoKontakto {
+      max-width: 80%;
+    }
+
+/*
 #kontaktua .testoKontakto {
     padding: 2em;
     text-align: center;
