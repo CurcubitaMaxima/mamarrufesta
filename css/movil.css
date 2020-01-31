@@ -99,8 +99,27 @@
 
   }
 /*****************************************************************/
-/************************ SECTIONS *****************************/
+/************************ MERCHANDISING *****************************/
 /*****************************************************************/
+#merchan .merchandising h2 {margin-top: 15%;}
+#merchan .merchandising h3{font-size: 1.5em;}
+#merchan .merchandising .merchand{
+  flex-direction: column;
+}
+#merchan .objetos-merchan{width: 100%;}
+#merchan .merchandising .merchand .parche0 img{ width: 100%;}
+#merchan .merchandising .merchand .parche1 img{ width: 100%;}
+#merchan .merchandising .merchand .parche2 img{ width: 100%;}
+#merchan .merchandising .merchand .txapa img{ width: 80%; }
+.txapaImg{
+  display: flex;
+justify-content: center;
+}
+.txapa .deskribapena1{
+  margin-top: -10%;
+}
+
+
 
 /************************ HASIERA ********************************/
 #hasiera .manifest, #hasiera .mierda{ display: none;}

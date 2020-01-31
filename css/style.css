@@ -516,6 +516,10 @@ table th {
   border: 2px solid #ff00ffff;
   color: white;
 }
+#merchan .merchandising h3{
+  font-size: 2em;
+  font-family: texto;
+}
 #merchan .merchandising p{
   margin:2%;
 }
