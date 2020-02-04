@@ -53,8 +53,9 @@
     justify-content: center;
     z-index: 99999;
   }
+
   @media screen and (max-width:768px ){
-    #menu_bar #navResponsive{ width: 100%;}
+    #menu_bar #navResponsive{ width: 100% !important; }
   }
   #menu_bar #navResponsive ul{
     width: 100%;
@@ -99,8 +100,27 @@
 
   }
 /*****************************************************************/
-/************************ SECTIONS *****************************/
+/************************ MERCHANDISING *****************************/
 /*****************************************************************/
+#merchan .merchandising h2 {margin-top: 15%;}
+#merchan .merchandising h3{font-size: 1.5em;}
+#merchan .merchandising .merchand{
+  flex-direction: column;
+}
+#merchan .objetos-merchan{width: 100%;}
+#merchan .merchandising .merchand .parche0 img{ width: 100%;}
+#merchan .merchandising .merchand .parche1 img{ width: 100%;}
+#merchan .merchandising .merchand .parche2 img{ width: 100%;}
+#merchan .merchandising .merchand .txapa img{ width: 80%; }
+.txapaImg{
+  display: flex;
+justify-content: center;
+}
+.txapa .deskribapena1{
+  margin-top: -10%;
+}
+
+
 
 /************************ HASIERA ********************************/
 #hasiera .manifest, #hasiera .mierda{ display: none;}
@@ -146,18 +166,46 @@
     width: 90%;
   }
 }
+/***************************EGITARAUA**************************************/
+@media screen and (max-width:768px ){
+  #egitaraua .contenidoEgitaraua {
+    flex-flow: column;
+    margin-top: 20%;
+}
+.otsaiak1{height: 60%;}
+.textoEgitaraua {
+    display: flex;
+    flex-flow: column;
+    margin-left: 10%;
+}
+#egitaraua .contenidoEgitaraua {
+    display: flex;
+    align-items: center;
+}
+.h2Egitaraua {
 
+    text-align: center;
+    width: 80%;
+
+}
 /***********************KONTAKTUA******************************************/
 
 @media screen and (max-width:768px ){
-#kontaktua .testoKontakto {
+  #kontaktua .testoKontakto {
+      max-width: 80%;
+    }
 
+/*
+#kontaktua .testoKontakto {
     padding: 2em;
     text-align: center;
     position: absolute;
     margin-top: 20%;
-
 }
+.h2h3 {
+    width: 50%;
+}
+
 }
 /*hasierako div-ak*/
 /*.galdera1{

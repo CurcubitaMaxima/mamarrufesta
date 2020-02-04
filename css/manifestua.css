@@ -346,6 +346,54 @@ width: 100%;
     color: black;
   }
 
+  .titulo {
+    text-align: center;
+    background: black;
+    width: 95%;
+    margin: 10% 0% 10% 2%;
+    border: 2px solid;
+}
+
+.titulo::before {
+    content: "";
+    width: 90%;
+    height: 15%;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    transform: rotate(2deg);
+    border: solid 4px #67f3da;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    z-index: 2;
+}
+
+
+  .titulo::after {
+      content: "";
+      width: 90%;
+      height: 15%;
+      position: absolute;
+      top: 15%;
+      left: 5%;
+      transform: rotate(-2deg);
+      border: solid 4px #f16f6f;
+      transition: all 1s ease-in-out;
+      -webkit-transition: all 1s ease-in-out;
+      z-index: 1;
+  }
+  .h1 {
+    margin: 10% 0% 0% 0%;
+  }
+  h1, h2{
+    font-size: 1.75em;
+  }
+
+  p {
+      width: 90%;
+      text-align: center;
+  }
+
 /*
 
 
