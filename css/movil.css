@@ -43,7 +43,6 @@
   }
   #menu_bar #navResponsive{
     display: none;
-    /*background: url(../img/fondo.png)  black center;*/
     background: black;
     align-items: center;
     height: 100vh;
@@ -83,6 +82,21 @@
     z-index: 999;
     background: transparent;
   }
+/*****************************************************************/
+/************************ HASIERA ********************************/
+/*****************************************************************/
+@media screen and (max-width:768px ){
+  #hasiera .logoPortada{
+    margin: 20px 0px;
+  }
+  #hasiera .paginaPrincipal .logoPortada h1{
+    font-size: 35px;
+  }
+  #hasiera .paginaPrincipal .logoPortada span{
+    font-size: 15px;
+    margin-left: 0px;
+  }
+}
 /*****************************************************************/
 /************************ PRODUKTUAK *****************************/
 /*****************************************************************/

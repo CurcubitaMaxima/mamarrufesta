@@ -127,6 +127,18 @@ a{text-decoration: none;}
 #navegacion .link:hover {
   background: #000;
 }
+#navegacion li#hizkuntza{
+  background-color: #000;
+}
+#menu_bar li#hizkuntza a, #navegacion li#hizkuntza a{
+  font-size: 15px;
+  font-family: texto;
+  height: 40px;
+  font-weight: bold;
+}
+#menu_bar li#hizkuntza a:hover, #navegacion li#hizkuntza a:hover{
+  color: yellow;
+}
 
 /**********************************************************************************************************/
 /**************************************** FONDO SECTIONS* *************************************************/
