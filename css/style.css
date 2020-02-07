@@ -381,12 +381,13 @@ background: linear-gradient(to bottom, #F7E06C 0%, #F8CED2 25%, #ED5B46 50%, #8B
     display: flex;
     align-items: center;
     height: 100%;
+    justify-content: center;
 }
 .lista-zerbitzuak{
   display: flex;
   flex-wrap: wrap;
   height: 100%;
-  width: 100%;
+  width: 90%;
   align-content: center;
 }
 .lista-zerbitzuak li{
