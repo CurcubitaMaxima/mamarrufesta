@@ -393,9 +393,13 @@ background: linear-gradient(to bottom, #F7E06C 0%, #F8CED2 25%, #ED5B46 50%, #8B
 .lista-zerbitzuak li{
   width: 25%;
   height: 25%;
+
 }
 .element-zerbitzuak{
   list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .l1{background: red;}
 .l2{background: blue;}
