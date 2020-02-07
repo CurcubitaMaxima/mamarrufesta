@@ -377,22 +377,33 @@ background: linear-gradient(to bottom, #F7E06C 0%, #F8CED2 25%, #ED5B46 50%, #8B
 /**********************************************************************************************************/
 /********************************************** ZERBITZUAK*************************************************/
 /**********************************************************************************************************/
+.kontent-zerbitzuak {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
 .lista-zerbitzuak{
   display: flex;
-  justify-content: space-around;
-  flex-flow: wrap;
-  background:blue;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
   align-content: center;
 }
 .lista-zerbitzuak li{
-  padding: 10%;
-  text-decoration: none;
-  background: red;
+  width: 25%;
+  height: 25%;
 }
-
-
-
-
+.element-zerbitzuak{
+  list-style: none;
+}
+.l1{background: red;}
+.l2{background: blue;}
+.l3{background: yellow;}
+.l4{background: blueviolet;}
+.l5{background: green;}
+.l6{background: grey;}
+.l7{background: violet;}
+.l8{background: orange;}
 /**********************************************************************************************************/
 /********************************************** EGITARAUA *************************************************/
 /**********************************************************************************************************/
