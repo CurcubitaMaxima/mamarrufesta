@@ -374,6 +374,25 @@ background: linear-gradient(to bottom, #F7E06C 0%, #F8CED2 25%, #ED5B46 50%, #8B
 /* Add a card effect for articles */
 
 
+<<<<<<< HEAD
+=======
+}
+.element-zerbitzuak{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.l1{background: red;}
+.l2{background: blue;}
+.l3{background: yellow;}
+.l4{background: blueviolet;}
+.l5{background: green;}
+.l6{background: grey;}
+.l7{background: violet;}
+.l8{background: orange;}
+.l1 .kotxea{background: url(../img/kotxeak.png); }
+>>>>>>> 2b085fc... kartel martxoak 26
 /**********************************************************************************************************/
 /********************************************** EGITARAUA *************************************************/
 /**********************************************************************************************************/
