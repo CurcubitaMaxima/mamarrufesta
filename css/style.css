@@ -434,34 +434,61 @@ background: linear-gradient(to bottom, #F7E06C 0%, #F8CED2 25%, #ED5B46 50%, #8B
 }
 
 /**lista de taldes**/
-.kontent-taldeak {
+.kontent-taldeak{
     display: flex;
     align-items: center;
     height: 100%;
     justify-content: center;
 }
-.lista-taldeak{
+.kontent-taldeak .lista-taldeak{
   display: flex;
   flex-wrap: wrap;
   height: 100%;
-  width: 90%;
+  width: 100%;
   align-content: center;
+  margin: 0 50px;
 }
-.lista-taldeak li{
-  width: 25%;
-  height: 25%;
-
-}
-.talde-irudiak{
-  width: 80%;
-}
-.element-taldeak{
+.kontent-taldeak .lista-taldeak .element-taldeak{
+  width: 200px;
+  height: 200px;
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
+.kontent-taldeak .lista-taldeak .element-taldeak .box {
+  text-align: center;
+}
+.kontent-taldeak .lista-taldeak .element-taldeak .box .button{
+  font-size: 1em;
+  color:#fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  display: block;
+  position: relative;
+}
+.kontent-taldeak .lista-taldeak .element-taldeak .box .button:hover p{
+  background:rgba(0,0,0,0.9);
+  font-size: 20px;
+  font-weight: 800;
+}
+.kontent-taldeak .lista-taldeak .element-taldeak .box .button .talde-irudiak{
+  width: 200px;
+  height: 200px;
+}
+.kontent-taldeak .lista-taldeak .element-taldeak .box .button p{
+  font-family: texto;
+  line-height: 1.6;
+  position: absolute;
+  height: 200px;
+  background:rgba(0,0,0,0.5);
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 .lt4{background: blueviolet;}
@@ -471,22 +498,6 @@ background: linear-gradient(to bottom, #F7E06C 0%, #F8CED2 25%, #ED5B46 50%, #8B
 .lt8{background: orange;}
 
 /**pop up*/
-.box {
-  padding: 35px;
-  text-align: center;
-}
-
-.button {
-  font-size: 1em;
-  padding: 10px;
-  color: #fff;
-
-  border-radius: 20px/50px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
-}
-
 .overlay {
   position: fixed;
   top: 0;
@@ -508,14 +519,14 @@ background: linear-gradient(to bottom, #F7E06C 0%, #F8CED2 25%, #ED5B46 50%, #8B
   padding: 20px;
   background: #060606;
   border-radius: 5px;
-  width: 30%;
+  width: 50%;
   position: relative;
   transition: all 5s ease-in-out;
   color:white;
   font-family: texto;
   border: solid 3px white;
-    height: 80%;
-
+  height: 80%;
+  min-width: 500px;
 }
 
 .popup h2 {
@@ -550,15 +561,17 @@ background: linear-gradient(to bottom, #F7E06C 0%, #F8CED2 25%, #ED5B46 50%, #8B
 }
 
 @media screen and (max-width: 700px){
-  .box{
-    width: 70%;
+  .kontent-taldeak{
+    padding-top: 60px;
+  }
+  .kontent-taldeak .lista-taldeak{
+    justify-content: center;
   }
   .popup{
-    width: 70%;
+    width: 75%;
+    min-width: 0;
   }
 }
-
-
 
 /* Clear floats after the columns */
 .row:after {
