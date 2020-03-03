@@ -144,7 +144,7 @@ a{text-decoration: none;}
 /**************************************** FONDO SECTIONS* *************************************************/
 /**********************************************************************************************************/
 #berriak{background: rgba(13,13,13,1);  color: white;}
-#zerbitzuak{background: rgba(13,13,13,1);  color: white;}
+#zerbitzuak{background: rgb(136, 118, 118);  color: white;}
 #galeria{ background: rgb(73, 24, 61);}
 #nola-heldu{background: rgba(156,115,2,1);}
 #egitaraua{background: rgba(101,1,53,1);}
@@ -400,7 +400,7 @@ background: linear-gradient(to bottom, #F7E06C 0%, #F8CED2 25%, #ED5B46 50%, #8B
   display: flex;
   justify-content: center;
   align-items: center;
-}
+}/*
 .l1{background: red;}
 .l2{background: blue;}
 .l3{background: yellow;}
