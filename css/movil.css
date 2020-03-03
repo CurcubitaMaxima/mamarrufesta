@@ -201,7 +201,23 @@ justify-content: center;
     text-align: center;
     width: 80%;
 
+  }
+
+/*****/
+
 }
+
+
+/******************************************/
+/***********ZERBITZUAK*********************/
+/*****************************************/
+@media screen and (max-width:768px ){
+.lista-zerbitzuak{
+    width: 90%;
+    margin-top:15%;
+  }
+}
+
 /***********************KONTAKTUA******************************************/
 
 @media screen and (max-width:768px ){

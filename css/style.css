@@ -377,6 +377,8 @@ background: linear-gradient(to bottom, #F7E06C 0%, #F8CED2 25%, #ED5B46 50%, #8B
 /**********************************************************************************************************/
 /********************************************** ZERBITZUAK*************************************************/
 /**********************************************************************************************************/
+
+
 .kontent-zerbitzuak {
     display: flex;
     align-items: center;
@@ -387,8 +389,9 @@ background: linear-gradient(to bottom, #F7E06C 0%, #F8CED2 25%, #ED5B46 50%, #8B
   display: flex;
   flex-wrap: wrap;
   height: 100%;
-  width: 90%;
+  width: 70%;
   align-content: center;
+  justify-content: space-around;
 }
 .lista-zerbitzuak li{
   /*width: 25%;
@@ -400,7 +403,16 @@ background: linear-gradient(to bottom, #F7E06C 0%, #F8CED2 25%, #ED5B46 50%, #8B
   display: flex;
   justify-content: center;
   align-items: center;
-}/*
+}
+.div-element-zerbitzuak{
+  text-align: center;
+}
+.div-element-zerbitzuak a{
+  text-decoration: none;
+  color:black;
+}
+
+/*
 .l1{background: red;}
 .l2{background: blue;}
 .l3{background: yellow;}
