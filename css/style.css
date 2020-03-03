@@ -391,8 +391,8 @@ background: linear-gradient(to bottom, #F7E06C 0%, #F8CED2 25%, #ED5B46 50%, #8B
   align-content: center;
 }
 .lista-zerbitzuak li{
-  width: 25%;
-  height: 25%;
+  /*width: 25%;
+  height: 25%;*/
 
 }
 .element-zerbitzuak{
@@ -433,7 +433,7 @@ background: linear-gradient(to bottom, #F7E06C 0%, #F8CED2 25%, #ED5B46 50%, #8B
   border: solid 2px #ff00ffff;
 }
 
-/**lista de taldes**/
+/*************************** lista de taldes ********************************/
 .kontent-taldeak{
     display: flex;
     align-items: center;
@@ -464,7 +464,6 @@ background: linear-gradient(to bottom, #F7E06C 0%, #F8CED2 25%, #ED5B46 50%, #8B
   color:#fff;
   text-decoration: none;
   cursor: pointer;
-  transition: all 0.3s ease-out;
   display: block;
   position: relative;
 }
@@ -498,7 +497,7 @@ background: linear-gradient(to bottom, #F7E06C 0%, #F8CED2 25%, #ED5B46 50%, #8B
 .lt8{background: orange;}
 
 /**pop up*/
-.overlay {
+.kontent-taldeak .lista-taldeak .element-taldeak .overlay{
   position: fixed;
   top: 0;
   bottom: 0;
@@ -508,56 +507,67 @@ background: linear-gradient(to bottom, #F7E06C 0%, #F8CED2 25%, #ED5B46 50%, #8B
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.overlay:target {
+.kontent-taldeak .lista-taldeak .element-taldeak .overlay:target {
   visibility: visible;
   opacity: 1;
 }
 
-.popup {
-  margin: 70px auto;
-  padding: 20px;
+.kontent-taldeak .lista-taldeak .element-taldeak .overlay .popup {
+  width: 800px;
+  margin: 0;
+  padding: 60px 25px 25px 25px;
   background: #060606;
   border-radius: 5px;
-  width: 50%;
   position: relative;
   transition: all 5s ease-in-out;
   color:white;
   font-family: texto;
   border: solid 3px white;
-  height: 80%;
-  min-width: 500px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: start;
 }
 
-.popup h2 {
-  margin-top: 0;
+.kontent-taldeak .lista-taldeak .element-taldeak .overlay .popup h2 {
+  position: absolute;
+  top: 10px;
   color: #f2f0f0;;
   font-family: Tahoma, Arial, sans-serif;
 }
-.popup .close {
+.kontent-taldeak .lista-taldeak .element-taldeak .overlay .popup .close {
   position: absolute;
-  top: 20px;
-  right: 30px;
+  top: 0px;
+  right: 10px;
   transition: all 200ms;
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
   color:white;
 }
-.popup .close:hover {
+.kontent-taldeak .lista-taldeak .element-taldeak .overlay .popup .close:hover {
   color: #06D85F;
 }
-.popup .content {
+.kontent-taldeak .lista-taldeak .element-taldeak .overlay .popup .content {
   max-height: 30%;
   overflow: auto;
+  width: 350px
 }
-.content p{
+.kontent-taldeak .lista-taldeak .element-taldeak .overlay .popup .content p{
   text-align: justify;
 }
-.popup-imagen{
-  width:60%;
+.kontent-taldeak .lista-taldeak .element-taldeak .overlay .popup .content .links-taldeak{
+  margin-top: 10px;
+}
+
+.kontent-taldeak .lista-taldeak .element-taldeak .overlay .popup .popup-imagen{
+  max-width: 275px;
   border: solid 3px #f0a;
-  margin-left: 15%;
 }
 
 @media screen and (max-width: 700px){
@@ -567,9 +577,15 @@ background: linear-gradient(to bottom, #F7E06C 0%, #F8CED2 25%, #ED5B46 50%, #8B
   .kontent-taldeak .lista-taldeak{
     justify-content: center;
   }
-  .popup{
+  .kontent-taldeak .lista-taldeak .element-taldeak .overlay .popup{
+    flex-direction: column;
+    align-items: center;
     width: 75%;
     min-width: 0;
+  }
+  .kontent-taldeak .lista-taldeak .element-taldeak .overlay .popup .content{
+    margin-top: 10px;
+    width: 95%;
   }
 }
 
