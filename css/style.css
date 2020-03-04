@@ -425,7 +425,24 @@ background: linear-gradient(to bottom, #F7E06C 0%, #F8CED2 25%, #ED5B46 50%, #8B
 /**********************************************************************************************************/
 /********************************************** EGITARAUA *************************************************/
 /**********************************************************************************************************/
-
+.konfirmazioak{
+  margin: 2% 0 0 10%;
+  height: 5%;
+  color: white;
+  background:black;
+padding: 10px 20px 0px 10px;
+  width: 15%;
+  font-family: punk;
+}
+.confirmaciones{
+  margin: 2% 0 0 10%;
+  height: 5%;
+  color: white;
+  background:black;
+padding: 10px 35px 0px 10px;
+  width: 15%;
+  font-family: punk;
+}
 #egitaraua .contenidoEgitaraua{
   height: 100vh;
   display: flex;
@@ -449,7 +466,7 @@ background: linear-gradient(to bottom, #F7E06C 0%, #F8CED2 25%, #ED5B46 50%, #8B
 .kontent-taldeak{
     display: flex;
     align-items: center;
-    height: 100%;
+    height: 90%;
     justify-content: center;
 }
 .kontent-taldeak .lista-taldeak{
@@ -458,7 +475,7 @@ background: linear-gradient(to bottom, #F7E06C 0%, #F8CED2 25%, #ED5B46 50%, #8B
   height: 100%;
   width: 100%;
   align-content: center;
-  margin: 0 50px;
+  margin: 0 50px 20%;
 }
 .kontent-taldeak .lista-taldeak .element-taldeak{
   width: 200px;
