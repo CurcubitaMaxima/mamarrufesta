@@ -568,10 +568,11 @@ background: linear-gradient(to bottom, #F7E06C 0%, #F8CED2 25%, #ED5B46 50%, #8B
 .kontent-taldeak .lista-taldeak .element-taldeak .overlay .popup .content {
   max-height: 30%;
   overflow: auto;
-  width: 350px
+  width: 470px;
 }
 .kontent-taldeak .lista-taldeak .element-taldeak .overlay .popup .content p{
   text-align: justify;
+  font-size: 80%;
 }
 .kontent-taldeak .lista-taldeak .element-taldeak .overlay .popup .content .links-taldeak{
   margin-top: 10px;
