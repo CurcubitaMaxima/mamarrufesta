@@ -144,6 +144,7 @@ a{text-decoration: none;}
 /**************************************** FONDO SECTIONS* *************************************************/
 /**********************************************************************************************************/
 #berriak{background: rgba(13,13,13,1);  color: white;}
+#zerbitzuak{background: rgb(136, 118, 118);  color: white;}
 #galeria{ background: rgb(73, 24, 61);}
 #nola-heldu{background: rgba(156,115,2,1);}
 #egitaraua{background: rgba(101,1,53,1);}
@@ -373,7 +374,45 @@ background: linear-gradient(to bottom, #F7E06C 0%, #F8CED2 25%, #ED5B46 50%, #8B
 }
 /* Add a card effect for articles */
 
+/**********************************************************************************************************/
+/********************************************** ZERBITZUAK*************************************************/
+/**********************************************************************************************************/
 
+
+.kontent-zerbitzuak {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+.lista-zerbitzuak{
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 70%;
+  align-content: center;
+  justify-content: space-around;
+}
+.lista-zerbitzuak li{
+  /*width: 25%;
+  height: 25%;*/
+
+}
+.element-zerbitzuak{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.div-element-zerbitzuak{
+  text-align: center;
+}
+.div-element-zerbitzuak a{
+  text-decoration: none;
+  color:black;
+}
+
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 }
@@ -383,6 +422,9 @@ background: linear-gradient(to bottom, #F7E06C 0%, #F8CED2 25%, #ED5B46 50%, #8B
   justify-content: center;
   align-items: center;
 }
+=======
+/*
+>>>>>>> develop
 .l1{background: red;}
 .l2{background: blue;}
 .l3{background: yellow;}
@@ -392,11 +434,31 @@ background: linear-gradient(to bottom, #F7E06C 0%, #F8CED2 25%, #ED5B46 50%, #8B
 .l7{background: violet;}
 .l8{background: orange;}
 .l1 .kotxea{background: url(../img/kotxeak.png); }
+<<<<<<< HEAD
 >>>>>>> 2b085fc... kartel martxoak 26
+=======
+>>>>>>> develop
 /**********************************************************************************************************/
 /********************************************** EGITARAUA *************************************************/
 /**********************************************************************************************************/
-
+.konfirmazioak{
+  margin: 2% 0 0 10%;
+  height: 5%;
+  color: white;
+  background:black;
+padding: 10px 20px 0px 10px;
+  width: 15%;
+  font-family: punk;
+}
+.confirmaciones{
+  margin: 2% 0 0 10%;
+  height: 5%;
+  color: white;
+  background:black;
+padding: 10px 35px 0px 10px;
+  width: 15%;
+  font-family: punk;
+}
 #egitaraua .contenidoEgitaraua{
   height: 100vh;
   display: flex;
@@ -416,8 +478,162 @@ background: linear-gradient(to bottom, #F7E06C 0%, #F8CED2 25%, #ED5B46 50%, #8B
   border: solid 2px #ff00ffff;
 }
 
+/*************************** lista de taldes ********************************/
+.kontent-taldeak{
+    display: flex;
+    align-items: center;
+    height: 90%;
+    justify-content: center;
+}
+.kontent-taldeak .lista-taldeak{
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  align-content: center;
+  margin: 0 50px 20%;
+}
+.kontent-taldeak .lista-taldeak .element-taldeak{
+  width: 200px;
+  height: 200px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.kontent-taldeak .lista-taldeak .element-taldeak .box {
+  text-align: center;
+}
+.kontent-taldeak .lista-taldeak .element-taldeak .box .button{
+  font-size: 1em;
+  color:#fff;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  position: relative;
+}
+.kontent-taldeak .lista-taldeak .element-taldeak .box .button:hover p{
+  background:rgba(0,0,0,0.9);
+  font-size: 20px;
+  font-weight: 800;
+}
+.kontent-taldeak .lista-taldeak .element-taldeak .box .button .talde-irudiak{
+  width: 200px;
+  height: 200px;
+}
+.kontent-taldeak .lista-taldeak .element-taldeak .box .button p{
+  font-family: texto;
+  line-height: 1.6;
+  position: absolute;
+  height: 200px;
+  background:rgba(0,0,0,0.5);
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
+.lt4{background: blueviolet;}
+.lt5{background: green;}
+.lt6{background: grey;}
+.lt7{background: violet;}
+.lt8{background: orange;}
+
+/**pop up*/
+.kontent-taldeak .lista-taldeak .element-taldeak .overlay{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.kontent-taldeak .lista-taldeak .element-taldeak .overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.kontent-taldeak .lista-taldeak .element-taldeak .overlay .popup {
+  width: 800px;
+  margin: 0;
+  padding: 60px 25px 25px 25px;
+  background: #060606;
+  border-radius: 5px;
+  position: relative;
+  transition: all 5s ease-in-out;
+  color:white;
+  font-family: texto;
+  border: solid 3px white;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: start;
+}
+
+.kontent-taldeak .lista-taldeak .element-taldeak .overlay .popup h2 {
+  position: absolute;
+  top: 10px;
+  color: #f2f0f0;;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.kontent-taldeak .lista-taldeak .element-taldeak .overlay .popup .close {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color:white;
+}
+.kontent-taldeak .lista-taldeak .element-taldeak .overlay .popup .close:hover {
+  color: #06D85F;
+}
+.kontent-taldeak .lista-taldeak .element-taldeak .overlay .popup .content {
+  max-height: 30%;
+  overflow: auto;
+  width: 470px;
+}
+.kontent-taldeak .lista-taldeak .element-taldeak .overlay .popup .content p{
+  text-align: justify;
+  font-size: 80%;
+}
+.kontent-taldeak .lista-taldeak .element-taldeak .overlay .popup .content .links-taldeak{
+  margin-top: 10px;
+}
+
+.kontent-taldeak .lista-taldeak .element-taldeak .overlay .popup .popup-imagen{
+  max-width: 275px;
+  border: solid 3px #f0a;
+}
+
+@media screen and (max-width: 700px){
+  .kontent-taldeak{
+    padding-top: 60px;
+  }
+  .kontent-taldeak .lista-taldeak{
+    justify-content: center;
+  }
+  .kontent-taldeak .lista-taldeak .element-taldeak .overlay .popup{
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    min-width: 0;
+  }
+  .kontent-taldeak .lista-taldeak .element-taldeak .overlay .popup .content{
+    margin-top: 10px;
+    width: 95%;
+  }
+}
 
 /* Clear floats after the columns */
 .row:after {
