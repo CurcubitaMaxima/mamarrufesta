@@ -535,7 +535,7 @@ padding: 10px 35px 0px 10px;
 .lt7{background: violet;}
 .lt8{background: orange;}
 
-/**pop up*/
+/**pop up**/
 .kontent-taldeak .lista-taldeak .element-taldeak .overlay{
   position: fixed;
   top: 0;
@@ -571,6 +571,7 @@ padding: 10px 35px 0px 10px;
   justify-content: space-around;
   flex-direction: row;
   align-items: start;
+  height: 80%; 
 }
 
 .kontent-taldeak .lista-taldeak .element-taldeak .overlay .popup h2 {
@@ -579,6 +580,32 @@ padding: 10px 35px 0px 10px;
   color: #f2f0f0;;
   font-family: Tahoma, Arial, sans-serif;
 }
+
+.popup-irudi-iframe{
+  display:flex;
+  flex-direction: column;
+}
+.container-link{
+display: flex;
+flex-direction: column;
+
+}
+.entzun{
+  padding-top: 5%;
+  text-align: center;
+}
+.div-flecha{
+  display:flex;
+  justify-content: center;
+  padding-top: 5%;
+}
+.flecha{
+  width: 5%;
+}
+.iframe{
+  padding-top:10%;
+}
+
 .kontent-taldeak .lista-taldeak .element-taldeak .overlay .popup .close {
   position: absolute;
   top: 0px;
@@ -593,13 +620,14 @@ padding: 10px 35px 0px 10px;
   color: #06D85F;
 }
 .kontent-taldeak .lista-taldeak .element-taldeak .overlay .popup .content {
-  max-height: 30%;
+  max-height: 80%;
   overflow: auto;
-  width: 470px;
+  width: 60%;
 }
 .kontent-taldeak .lista-taldeak .element-taldeak .overlay .popup .content p{
   text-align: justify;
   font-size: 80%;
+  line-height: 200%;
 }
 .kontent-taldeak .lista-taldeak .element-taldeak .overlay .popup .content .links-taldeak{
   margin-top: 10px;
