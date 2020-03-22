@@ -217,6 +217,8 @@ justify-content: center;
 
   }
 
+<<<<<<< HEAD
+=======
 /*****/
 
 }
@@ -234,6 +236,7 @@ justify-content: center;
 
 /***********************KONTAKTUA******************************************/
 
+>>>>>>> develop
 @media screen and (max-width:768px ){
   #kontaktua .testoKontakto{
       max-width: 95%;
